@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app.styles.scss",
+        "../components/aboutSection/_aboutSection.styles.scss"
+    ],
+    "names": [],
+    "file": "app.styles.css"
+}
