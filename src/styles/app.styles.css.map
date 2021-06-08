@@ -4,7 +4,8 @@
     "sources": [
         "app.styles.scss",
         "../components/aboutSection/_aboutSection.styles.scss",
-        "../components/serviceSection/_serviceSection.styles.scss"
+        "../components/serviceSection/_serviceSection.styles.scss",
+        "../components/faqSection/_faqSection.styles.scss"
     ],
     "names": [],
     "file": "app.styles.css"
