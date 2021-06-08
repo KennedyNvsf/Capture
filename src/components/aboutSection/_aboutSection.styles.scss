@@ -1,1 +1,41 @@
 
+
+
+.aboutContainer {
+
+    min-height: 90vh;
+    @include flex (row, center, space-around);
+    padding: 5rem 10rem;
+    color: white;
+    
+}
+
+
+.aboutText{
+
+    flex: 1;
+    padding-right: 5rem;
+
+    h2{
+        font-weight: lighter;
+    }
+}
+
+.aboutImage{
+
+    overflow: hidden;
+     flex: 1;
+
+     img{
+
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+     }
+    
+}
+
+.hide{
+    
+    overflow: hidden;
+}

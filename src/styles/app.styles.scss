@@ -1,9 +1,23 @@
 
+//variables
 
 
+
+
+//mixins
+
+@mixin flex($direction, $align, $justify) {
+
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    
+}
 
 
 
 @import "../components/aboutSection/aboutSection.styles";
 @import "../components/serviceSection/serviceSection.styles";
 @import "../components/faqSection/faqSection.styles";
+@import "./globals";

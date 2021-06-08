@@ -18,6 +18,7 @@ const AboutUsPage = () => {
             <AboutSection/>
             <ServiceSection/>
             <FaqSection/>
+            
         </div>
     )
     

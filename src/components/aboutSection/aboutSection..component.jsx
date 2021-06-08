@@ -12,7 +12,8 @@ const AboutSection = () => {
 
     return(
 
-         <div>
+         <div className = "aboutContainer">
+             
               <div className="aboutText">
 
                     <div className="title">
