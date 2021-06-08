@@ -3,7 +3,8 @@
     "mappings": "",
     "sources": [
         "app.styles.scss",
-        "../components/aboutSection/_aboutSection.styles.scss"
+        "../components/aboutSection/_aboutSection.styles.scss",
+        "../components/serviceSection/_serviceSection.styles.scss"
     ],
     "names": [],
     "file": "app.styles.css"
