@@ -1,0 +1,61 @@
+
+
+.services{
+
+    min-height: 90vh;
+    @include flex (row, center, space-around);
+    padding: 5rem 10rem;
+    color: white;
+    
+}
+
+.servicesImage{
+    flex: 1;
+
+    img{
+
+        width: 100%;
+        object-fit: cover;
+        height: 80vh;
+    }
+}
+.servicesText{
+
+    flex: 1;
+    padding-left: 5rem;
+
+    h2{
+        font-weight: lighter;
+        padding-bottom: 2rem;
+    }
+
+    p{
+        width: 70%;
+        padding: 2rem 0rem 4rem 0rem;
+    }
+
+  .cards{
+
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .cardBlocks{
+
+    flex-basis: 20rem;
+
+    .icons{
+
+        display: flex;
+        align-items: center;
+        
+        h3{
+            margin-left: 1rem;
+            background: white;
+            color: black;
+            padding: 1rem;
+        }
+    }
+   
+  }
+}
