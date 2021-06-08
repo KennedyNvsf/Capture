@@ -80,7 +80,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 5rem;
+  padding-left: 10rem;
 }
 
 .servicesText h2 {
@@ -122,6 +122,51 @@
   padding: 1rem;
 }
 
+.faq {
+  min-height: 90vh;
+  padding: 5rem 10rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq h2 {
+  font-weight: lighter;
+}
+
+.faq span {
+  display: block;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.faq .questionBlocks {
+  padding: 3rem 0rem;
+  cursor: pointer;
+}
+
+.faq .answer {
+  padding: 2rem 0rem;
+}
+
+.faq .answer p {
+  padding: 1rem 0rem;
+}
+
+.answer::after {
+  display: block;
+  content: "";
+  background: #cccccc;
+  height: 0.2rem;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -158,6 +203,7 @@ h2 {
 
 h4 {
   font-weight: bold;
+  font-size: 2rem;
 }
 
 a {
