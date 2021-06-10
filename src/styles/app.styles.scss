@@ -16,8 +16,11 @@
 }
 
 
-
-@import "../components/aboutSection/aboutSection.styles";
-@import "../components/serviceSection/serviceSection.styles";
-@import "../components/faqSection/faqSection.styles";
-@import "./globals";
+@import "../components/navBar/nav.styles"; //NAVBAR STYLES
+@import "../components/aboutSection/aboutSection.styles";//ABOUT SECTION STYLES
+@import "../components/serviceSection/serviceSection.styles";//SERVICES SECTION 
+@import "../components/faqSection/faqSection.styles"; //FAQ SECTION STYLES
+@import "../components/workSection/workSection.styles";//WORK SECTION STYKES
+@import "../components/movieDetailSection/movieDetail.styles";//movie deets
+@import "../components/awards/award.styles";
+@import "./globals";//GLOBAL STYLES
