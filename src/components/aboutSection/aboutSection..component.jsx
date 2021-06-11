@@ -4,6 +4,9 @@ import React from "react";
 
 import {motion} from "framer-motion";//framer motion package
 
+//components
+import WaveAnimation from "../wave/wave.component";
+
 import { TextAnimation } from "../../animations";//text animation pulled from animation.js
 import { FadeAnimation } from "../../animations";//fade animation
 import { PhotoAnimation } from "../../animations";//imageAnimation
@@ -55,6 +58,8 @@ const AboutSection = () => {
                 <div className="aboutImage">
                     <motion.img variants = {PhotoAnimation} src= {home1} alt="guy with camera" />
                 </div>
+
+                <WaveAnimation/>
         </div>
        
     )

@@ -233,6 +233,10 @@ nav ul li {
      object-fit: cover;
 }
 
+.fst {
+  overflow: hidden;
+}
+
 .detailsContainer {
   color: white;
 }
@@ -299,6 +303,12 @@ nav ul li {
 
 p {
   padding: 2rem 0rem;
+}
+
+.wave {
+  position: absolute;
+  z-index: -1;
+  left: 0;
 }
 
 * {

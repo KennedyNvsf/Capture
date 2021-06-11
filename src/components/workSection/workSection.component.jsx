@@ -1,6 +1,7 @@
 //PACKAGES
 import React from "react";
 import {Link} from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "../workSection/_workSection.styles.scss";
 
@@ -10,6 +11,9 @@ import athlete from "../../img/athlete-small.png";
 import goodTimes from "../../img/goodtimes-small.png";
 import theRacer from "../../img/theracer-small.png";
 
+//animation
+import { FadeAnimation, PhotoAnimation, LineGlideAnimation} from "../../animations";
+
 
 const WorkSection = () => {
 
@@ -18,13 +22,17 @@ const WorkSection = () => {
         <div className = "workContainer">
 
             <div className="movie">
+                 
+                <motion.h2 variants = {FadeAnimation}>The Athlete</motion.h2>
 
-                <h2>The Athlete</h2>
-
-                <div className="line"></div>
+                <motion.div variants = {LineGlideAnimation} className="line"></motion.div>
 
                 <Link to = "/work/the-athlete">
-                <img src= {athlete} alt="athlete" />
+
+                    <div className = "fst">
+                    <motion.img variants = {PhotoAnimation} src= {athlete} alt="athlete" />
+                    </div>
+              
                 </Link>
 
             </div>
@@ -52,6 +60,8 @@ const WorkSection = () => {
                 </Link>
 
             </div>
+
+            
 
         
         </div>

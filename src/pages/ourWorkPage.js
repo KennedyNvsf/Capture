@@ -5,7 +5,7 @@ import React from "react";
 import {motion} from "framer-motion";
 
 //animation
-import { pageAnimation } from "../animations";
+import { pageAnimation} from "../animations";
 
 //components
 import WorkSection from "../components/workSection/workSection.component"; 
@@ -18,7 +18,8 @@ const OurWorkPage = () => {
 
         <motion.div variants = {pageAnimation} initial = "hidden" animate = "show" exit = "exit">
 
-            <WorkSection/>
+           
+                  <WorkSection/>
         
         </motion.div>
     )

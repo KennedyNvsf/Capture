@@ -25,7 +25,7 @@ export const pageAnimation = {
     exit: {
 
         opacity: 0,
-        y: 300,
+        // y: 300, to slide down on exit
         transition: {duration: 0.5}
     }
 
@@ -79,5 +79,36 @@ export const PhotoAnimation = {
             duration: 0.75,
             ease: "easeOut"
         }
+    }
+}
+
+export const LineGlideAnimation = {
+
+    hidden: {
+
+        width: "0%", //if you want to use pixels instead of percentages then you wont need the quotes
+
+    },
+
+    show: {
+        width: "100%",
+        transition: {duration: 1.5}
+    }
+}
+
+export const FrameAnimation = {
+
+    hidden: {
+
+        x: "-130%",
+        skew: "45deg"
+    },
+
+    show: {
+
+        x: "100%",
+        skew: "0deg",
+        transition: {duration: 1, ease: "easeOut"},
+        
     }
 }
