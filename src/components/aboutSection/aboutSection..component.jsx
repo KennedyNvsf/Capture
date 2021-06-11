@@ -2,7 +2,11 @@
 
 import React from "react";
 
-import {motion} from "framer-motion";
+import {motion} from "framer-motion";//framer motion package
+
+import { TextAnimation } from "../../animations";//text animation pulled from animation.js
+import { FadeAnimation } from "../../animations";//fade animation
+import { PhotoAnimation } from "../../animations";//imageAnimation
 
 import "./_aboutSection.styles.scss";//styles
 
@@ -27,29 +31,29 @@ const AboutSection = () => {
 
                         <div className="hide">
 
-                            <h2>We work to make </h2>
+                            <motion.h2 variants = {TextAnimation} >We work to make </motion.h2>
 
                         </div>
 
                         <div className="hide">
 
-                            <h2>Your <span>dreams</span> come</h2>
+                            <motion.h2 variants = {TextAnimation}>Your <span>dreams</span> come</motion.h2>
                         </div>
 
                         <div className="hide">
-                            <h2 >True</h2>
+                            <motion.h2 variants = {TextAnimation}>True</motion.h2>
                         </div>
                     </div>
 
-                    <p>Contact us for any photography or video ideas you might have.
+                    <motion.p variants = {FadeAnimation}>Contact us for any photography or video ideas you might have.
                         We have professionals with explendid skills.
-                    </p>
+                    </motion.p>
 
-                    <button>Contact Us</button>
+                    <motion.button variants = {FadeAnimation}>Contact Us</motion.button>
                 </div>
 
                 <div className="aboutImage">
-                    <img src= {home1} alt="guy with camera" />
+                    <motion.img variants = {PhotoAnimation} src= {home1} alt="guy with camera" />
                 </div>
         </div>
        

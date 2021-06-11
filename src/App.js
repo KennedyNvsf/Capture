@@ -27,7 +27,7 @@ function App() {
 
           <NavBar/>
 
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
 
                         
                   <Switch location = {location} key = {location.pathname}>
