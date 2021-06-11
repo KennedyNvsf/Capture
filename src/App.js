@@ -3,7 +3,10 @@ import React from "react";
 import "./styles/app.styles.css";
 
 //react router
-import {Route} from "react-router-dom";
+import {Route, Switch, useLocation} from "react-router-dom";
+
+//animation
+import { AnimatePresence } from "framer-motion"; //DETECTS WHEN THE MOUNTED COMPONENT LEAVES THE SCREEN.
 
 //importing pages
 import AboutUsPage from "./pages/AboutUsPage";//ABOUT PAGE
@@ -16,7 +19,7 @@ import NavBar from "./components/navBar/nav.component";
 
 function App() {
 
-
+      const location = useLocation();
 
   return (
 
@@ -24,21 +27,31 @@ function App() {
 
           <NavBar/>
 
-          <Route exact path = "/">
-                <AboutUsPage/>
-          </Route>
+            <AnimatePresence>
 
-          <Route exact path = "/work">
-                <OurWorkPage/>
-          </Route>
+                        
+                  <Switch location = {location} key = {location.pathname}>
 
-          <Route exact path = "/work/:id">
-                <MovieDetailsPage/>
-          </Route>
+                        <Route exact path = "/">
+                              <AboutUsPage/>
+                        </Route>
+
+                        <Route exact path = "/work">
+                              <OurWorkPage/>
+                        </Route>
+
+                        <Route  path = "/work/:id">
+                              <MovieDetailsPage/>
+                        </Route>
+                        
+                        <Route  path = "/contact">
+                              <ContactUsPage/>
+                        </Route>
+                        
+                   </Switch>
+                 
+            </AnimatePresence>
          
-          <Route exact path = "/contact">
-                <ContactUsPage/>
-          </Route>
 
     </div>
   );

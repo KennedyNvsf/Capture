@@ -1,6 +1,10 @@
 
 
 import React from "react";
+import {motion} from "framer-motion";
+
+//animation
+import { pageAnimation } from "../animations";
 
 //components
 import AboutSection from "../components/aboutSection/aboutSection..component";
@@ -13,13 +17,13 @@ const AboutUsPage = () => {
 
     return(
 
-        <div>
+        <motion.div variants = {pageAnimation} initial = "hidden" animate = "show" exit = "exit">
 
             <AboutSection/>
             <ServiceSection/>
             <FaqSection/>
             
-        </div>
+        </motion.div>
     )
     
 }
