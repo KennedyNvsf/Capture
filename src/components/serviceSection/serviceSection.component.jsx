@@ -1,6 +1,9 @@
 
 import React from "react";
 
+import { motion } from "framer-motion";
+import { useScroll } from "../../scrollAnimation";//custom hook from the scrollAnimation.js
+
 import "./_serviceSection.styles.scss";//styles
 
 //importing icons 
@@ -12,7 +15,13 @@ import teamwork from "../../img/teamwork.svg";
 //imported images
 import home2 from "../../img/home2.png"
 
+//BoxAnimation
+
+import { BoxAnimation } from "../../animations";
+
 const ServiceSection = () => {
+
+    const [element, controls] = useScroll();
 
     return (
 
@@ -22,7 +31,7 @@ const ServiceSection = () => {
                 <img src= {home2} alt=""/>
             </div>
 
-            <div className="servicesText">
+            <motion.div  variants = {BoxAnimation} ref = {element} initial = "hidden" animate = {controls} className="servicesText">
                 <h2>
                     <span>High </span><span>Quality</span> Services
                 </h2>
@@ -69,7 +78,7 @@ const ServiceSection = () => {
 
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

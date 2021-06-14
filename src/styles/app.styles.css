@@ -196,7 +196,7 @@ nav ul li {
   padding: 1rem 0rem;
 }
 
-.answer::after {
+.questionBlocks::after {
   display: block;
   content: "";
   background: #cccccc;
