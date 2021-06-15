@@ -63,6 +63,7 @@ nav ul li {
 
 .aboutText h2 {
   font-weight: lighter;
+  color: white;
 }
 
 .aboutImage {
@@ -286,6 +287,42 @@ nav ul li {
      object-fit: cover;
 }
 
+.contactContainer {
+  padding: 5rem 10rem;
+  color: #353535;
+  min-height: 90vh;
+  background-color: white;
+}
+
+.title {
+  margin-bottom: 4rem;
+  color: black;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socials h2 {
+  margin: 2rem;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: #353535;
+}
+
 .awardBlocks {
   padding: 5rem;
 }
@@ -311,6 +348,49 @@ p {
   left: 0;
 }
 
+@media screen and (max-width: 1750px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  html {
+    font-size: 60%;
+    overflow-x: hidden;
+  }
+  .aboutContainer {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  html {
+    font-size: 50%;
+  }
+  .servicesImage img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 879px) {
+  html {
+    font-size: 40%;
+  }
+  .services {
+    display: block;
+    text-align: center;
+    margin: 2rem 2rem;
+  }
+  .servicesText {
+    text-align: center;
+    margin: auto;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -321,6 +401,7 @@ p {
 body {
   background-color: #1b1b1b;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 button {

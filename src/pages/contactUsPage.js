@@ -3,19 +3,19 @@
 import React from "react";
 
 import {motion} from "framer-motion";
-
-//animation
 import { pageAnimation } from "../animations";
+
+import ContactUsSection from "../components/contactUsSection/contact.component";
 
 const ContactUsPage = () => {
 
     return (
 
-        <motion.div variants = {pageAnimation} initial = "hidden" animate = "show" exit = "exit">
+        <div>
 
-            <h1>Contact Us</h1>
+            <ContactUsSection/>
         
-        </motion.div>
+        </div>
     )
 }
 

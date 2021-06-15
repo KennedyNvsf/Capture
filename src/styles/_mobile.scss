@@ -1,0 +1,77 @@
+
+
+@media screen and  (max-width: 1750px) {
+
+    html{
+        font-size: 80%;
+    }
+    
+}
+
+@media screen and  (max-width: 1410px) {
+
+    html{
+        font-size: 60%;
+        overflow-x: hidden;
+    }
+
+    .aboutContainer{
+        display: block;
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and  (max-width: 1056px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .servicesImage img{
+
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+@media screen and  (max-width: 879px) {
+
+    html{
+        font-size: 40%;
+    }
+
+    .services{
+        display: block;
+        text-align: center;
+        margin: 2rem 2rem;
+    }
+
+    .servicesText{
+        text-align: center;
+        margin: auto;
+    }
+    
+}
+
+
+// @media screen and  (max-width: 705px) {
+
+//     html{
+//         font-size: 30%;
+//     }
+    
+// }
+
+
+
+
+
+
+
+
+
+
